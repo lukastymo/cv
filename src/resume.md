@@ -24,10 +24,34 @@ Technical experience:
 - Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
 - Agile Development practices: CI/CD, TDD, Pair Programming, Code Review
 
-### Senior Scala Developer (contract) 
+### Education
+
+- M.S., MBA, University of Illinois Urbana-Champaign, 2019 - present, USA
+- M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow, Poland
+
+### Senior Scala Developer (contract)
+
+_GridWorks Consulting | Fish Farm_ (full remote)<br/>
+December 2019 -- Present, London, UK
+
+* I work as a consultant for porting the legacy .NET, Octave, Python codebases to the new architecture
+
+* As we use RabbitMQ, rewriting can happen in a consistent and Prod-friendly manner (piece by piece)
+
+Tech stack and activities:
+
+- Suggest technology for solving particular problem
+- Scala / typed Akka (core + persistent), Lagom Framework, Cassandra, Kubernetes
+- Rapid development of small simulations in Scala and Akka
+- Event-driven architecture, Event Sourcing / CQRS
+- Analysing legacy code in different languages (Mind maps, direct conversation with authors, require a lot of proactiveness)
+- Event storming, collecting complex, technical requirements from physicist
+- Closely collaborate with technical architects
+
+### Senior Scala Developer (contract)
 
 _Linklaters | Nakhoda_<br/>
-November 2018 -- Present, London, UK
+November 2018 -- December 2019, London, UK
 
 * My work in the project required a lot of proactiveness and programming. Firstly, I clarified requirements between lawyers, frontend developers and designers. Then, I suggested best solution for the problem, and finally I implemented the feature(s) in a one-week sprint.
 
@@ -44,7 +68,7 @@ Tech stack and activities:
 - REST, API versioning, Swagger, Database migration
 - I was participating in our release rota in which throughout the whole week I release the project, potential hotfixes, prepare release notes, coordinate all the teams and develop stories assigned to me.
 
-### Data Engineer (contract) 
+### Data Engineer (contract)
 
 _Royal Mail | GBI_<br/>
 May 2018 -- November 2018, London, UK
@@ -58,7 +82,7 @@ May 2018 -- November 2018, London, UK
 Tech stack:
 
 - Scala (main production language), Python (PoC)
-- Apache Spark (Spark SQL), Yarn, HDFS, Linux, Apache Zeppelin, 
+- Apache Spark (Spark SQL), Yarn, HDFS, Linux, Apache Zeppelin,
 - TDD, Kubernetes, Docker, Akka-HTTP, MongoDB, Cats
 - On-premise Cloud
 - REST, Swagger, Gatling
@@ -115,7 +139,7 @@ Tech stack:
 - Play framework, RESTful API, MongoDB
 - Microservices, Kibana, Grafana
 - Cucumber, ScalaTest, Property-based testing
-  
+
 ### Senior Software Engineer
 
 _Monitise | FinKit platform, Matm_<br/>
@@ -138,23 +162,7 @@ Tech stack:
 _Sabre Holdings_<br/>
 November 2010 -- August 2013, Krakow, Poland
 
-* I helped in developing web-based, highly configurable booking application for numerous airlines.
-
-* I proposed and implemented speeding up development by recording a web state to disk. A tester could persist the current state of the application, and a developer could retrieve it at any time, at any moment – saving time and reproducing some nasty bugs in a second.
-
-Tech stack:
-
-- Java, Spring Core, MVC, Webflow, JavaScript, JSP, TDD, CI, SOLID
-
 ### Full stack Java Developer
 
 _ComArch_<br/>
 June 2008 -- November 2010, Krakow, Poland
-
-- ICEfaces vs RichFaces, Tomcat & Websphere, Java, JSF, Portlets, JavaScript, AJAX
-
-### Education
-
-M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow, Poland
-
-- Diploma dissertation: Comparing JSF frameworks: ICEfaces and RichFaces
