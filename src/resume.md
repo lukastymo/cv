@@ -9,15 +9,16 @@ I'm goal oriented, proactive and able to work remotely, with outstanding communi
 
 My business experience: Legal (ISDA, initial margin documentation), Machine Learning (Apache Spark, Scala, Python, Docker), Finance and Banking (Risk Management FRTB, MIFID, Basel), Energy industry (Energy price forecasting, IoT), Public sector (Automatic recruitment system), Aviation.
 
-Info:
+My after-work activities:
 
-- [`stackoverflow.com/users/574799/smas`][stackoverflow] (top 2%)
-- [`github.com/lukastymo`][github]
-- [`codeforces.com/profile/smas`][codeforces]
+- My homepage and blog: [lukastymo.com](https://lukastymo.com)
+- Scala course: [scalaworkshop.com](https://scalaworkshop.com)
+- [stackoverflow.com/users/574799/smas](https://stackoverflow.com/users/574799/smas) (top 2%)
+- [codeforces.com/profile/smas](https://codeforces.com/profile/smas)
 
 Technical experience:
 
-- Scala, Functional Programming, Java, JVM
+- Scala (Functional Programming), Java (SOLID, OO), JVM
 - Big Data: Apache Spark, HDFS, Apache Hive, ETL, SQL, Docker
 - Machine Learning, Python / Jupyter Notebook
 - DevOps & Cloud: AWS, Ansible, Terraform, Grafana, Docker and Kubernetese, ELK
@@ -31,42 +32,19 @@ Technical experience:
 
 ### Senior Scala Developer (contract)
 
-_GridWorks Consulting | Fish Farm_ (full remote)<br/>
-December 2019 -- Present, London, UK
-
-* I work as a consultant for porting the legacy .NET, Octave, Python codebases to the new architecture
-
-* As we use RabbitMQ, rewriting can happen in a consistent and Prod-friendly manner (piece by piece)
-
-Tech stack and activities:
-
-- Suggest technology for solving particular problem
-- Scala / typed Akka (core + persistent), Lagom Framework, Cassandra, Kubernetes
-- Rapid development of small simulations in Scala and Akka
-- Event-driven architecture, Event Sourcing / CQRS
-- Analysing legacy code in different languages (Mind maps, direct conversation with authors, require a lot of proactiveness)
-- Event storming, collecting complex, technical requirements from physicist
-- Closely collaborate with technical architects
-
-### Senior Scala Developer (contract)
-
 _Linklaters | Nakhoda_<br/>
 November 2018 -- December 2019, London, UK
 
-* My work in the project required a lot of proactiveness and programming. Firstly, I clarified requirements between lawyers, frontend developers and designers. Then, I suggested best solution for the problem, and finally I implemented the feature(s) in a one-week sprint.
-
-* I implemented essential modules in the project: Document Approvals, Comments, Custom Job Queue solutions.
-
-* I promoted and implemented Gatling performance tests attached to our CI/CD pipeline.
+* We worked on the new way of negotiating the International Swaps and Derivatives Association (ISDA) documentation. [nakhoda.ai](https://nakhoda.ai)
 
 Tech stack and activities:
 
 - Functional Scala, Cats, Monix Tasks, Doobie
 - PostgreSQL
-- TDD, Lean Agile and pragmatic Scala evangelist
+- TDD, Automated tests
 - Kubernetes, Docker, On-premise Cloud
 - REST, API versioning, Swagger, Database migration
-- I was participating in our release rota in which throughout the whole week I release the project, potential hotfixes, prepare release notes, coordinate all the teams and develop stories assigned to me.
+- I worked closely with our DevOps team as a part of the release rota (releases and hotfixes)
 
 ### Data Engineer (contract)
 

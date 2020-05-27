@@ -1,3 +1,7 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
+%
 \documentclass[]{rss}
 \usepackage{lmodern}
 \usepackage{amssymb,amsmath}
@@ -6,12 +10,9 @@
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
 \else % if luatex or xelatex
-  \ifxetex
-    \usepackage{mathspec}
-  \else
-    \usepackage{fontspec}
-  \fi
+  \usepackage{unicode-math}
   \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
 \fi
 % use upquote if available, for straight quotes in verbatim environments
@@ -21,9 +22,14 @@
 \usepackage[]{microtype}
 \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\PassOptionsToPackage{hyphens}{url} % url is loaded by hyperref
-\usepackage[unicode=true]{hyperref}
-\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{xcolor}
+\usepackage{hyperref}
 \hypersetup{
             pdftitle={Resume},
             colorlinks=true,
@@ -32,12 +38,6 @@
             urlcolor=Blue,
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
 \setlength{\emergencystretch}{3em}  % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
@@ -79,17 +79,19 @@ Banking (Risk Management FRTB, MIFID, Basel), Energy industry (Energy
 price forecasting, IoT), Public sector (Automatic recruitment system),
 Aviation.
 
-Info:
+My after-work activities:
 
 \begin{itemize}
 \tightlist
 \item
-  {[}\texttt{stackoverflow.com/users/574799/smas}{]}{[}stackoverflow{]}
+  My homepage and blog: \href{https://lukastymo.com}{lukastymo.com}
+\item
+  Scala course: \href{https://scalaworkshop.com}{scalaworkshop.com}
+\item
+  \href{https://stackoverflow.com/users/574799/smas}{stackoverflow.com/users/574799/smas}
   (top 2\%)
 \item
-  {[}\texttt{github.com/lukastymo}{]}{[}github{]}
-\item
-  {[}\texttt{codeforces.com/profile/smas}{]}{[}codeforces{]}
+  \href{https://codeforces.com/profile/smas}{codeforces.com/profile/smas}
 \end{itemize}
 
 Technical experience:
@@ -97,7 +99,7 @@ Technical experience:
 \begin{itemize}
 \tightlist
 \item
-  Scala, Functional Programming, Java, JVM
+  Scala (Functional Programming), Java (SOLID, OO), JVM
 \item
   Big Data: Apache Spark, HDFS, Apache Hive, ETL, SQL, Docker
 \item
@@ -111,7 +113,8 @@ Technical experience:
   Agile Development practices: CI/CD, TDD, Pair Programming, Code Review
 \end{itemize}
 
-\subsubsection{Education}\label{education}
+\hypertarget{education}{%
+\subsubsection{Education}\label{education}}
 
 \begin{itemize}
 \tightlist
@@ -123,63 +126,19 @@ Technical experience:
   Poland
 \end{itemize}
 
+\hypertarget{senior-scala-developer-contract}{%
 \subsubsection{Senior Scala Developer
-(contract)}\label{senior-scala-developer-contract}
-
-\emph{GridWorks Consulting \textbar{} Fish Farm} (full remote) December
-2019 -- Present, London, UK
-
-\begin{itemize}
-\item
-  I work as a consultant for porting the legacy .NET, Octave, Python
-  codebases to the new architecture
-\item
-  As we use RabbitMQ, rewriting can happen in a consistent and
-  Prod-friendly manner (piece by piece)
-\end{itemize}
-
-Tech stack and activities:
-
-\begin{itemize}
-\tightlist
-\item
-  Suggest technology for solving particular problem
-\item
-  Scala / typed Akka (core + persistent), Lagom Framework, Cassandra,
-  Kubernetes
-\item
-  Rapid development of small simulations in Scala and Akka
-\item
-  Event-driven architecture, Event Sourcing / CQRS
-\item
-  Analysing legacy code in different languages (Mind maps, direct
-  conversation with authors, require a lot of proactiveness)
-\item
-  Event storming, collecting complex, technical requirements from
-  physicist
-\item
-  Closely collaborate with technical architects
-\end{itemize}
-
-\subsubsection{Senior Scala Developer
-(contract)}\label{senior-scala-developer-contract-1}
+(contract)}\label{senior-scala-developer-contract}}
 
 \emph{Linklaters \textbar{} Nakhoda} November 2018 -- December 2019,
 London, UK
 
 \begin{itemize}
+\tightlist
 \item
-  My work in the project required a lot of proactiveness and
-  programming. Firstly, I clarified requirements between lawyers,
-  frontend developers and designers. Then, I suggested best solution for
-  the problem, and finally I implemented the feature(s) in a one-week
-  sprint.
-\item
-  I implemented essential modules in the project: Document Approvals,
-  Comments, Custom Job Queue solutions.
-\item
-  I promoted and implemented Gatling performance tests attached to our
-  CI/CD pipeline.
+  We worked on the new way of negotiating the International Swaps and
+  Derivatives Association (ISDA) documentation.
+  \href{https://nakhoda.ai}{nakhoda.ai}
 \end{itemize}
 
 Tech stack and activities:
@@ -191,18 +150,18 @@ Tech stack and activities:
 \item
   PostgreSQL
 \item
-  TDD, Lean Agile and pragmatic Scala evangelist
+  TDD, Automated tests
 \item
   Kubernetes, Docker, On-premise Cloud
 \item
   REST, API versioning, Swagger, Database migration
 \item
-  I was participating in our release rota in which throughout the whole
-  week I release the project, potential hotfixes, prepare release notes,
-  coordinate all the teams and develop stories assigned to me.
+  I worked closely with our DevOps team as a part of the release rota
+  (releases and hotfixes)
 \end{itemize}
 
-\subsubsection{Data Engineer (contract)}\label{data-engineer-contract}
+\hypertarget{data-engineer-contract}{%
+\subsubsection{Data Engineer (contract)}\label{data-engineer-contract}}
 
 \emph{Royal Mail \textbar{} GBI} May 2018 -- November 2018, London, UK
 
@@ -243,8 +202,9 @@ Tech stack:
   REST, Swagger, Gatling
 \end{itemize}
 
+\hypertarget{big-data-developer-contract}{%
 \subsubsection{Big Data Developer
-(contract)}\label{big-data-developer-contract}
+(contract)}\label{big-data-developer-contract}}
 
 \emph{IHS Markit \textbar{} Risk Factor Utility (FRTB)} September 2017
 -- May 2018, London, UK
@@ -290,8 +250,9 @@ Tech stack:
   Agile: Scrum
 \end{itemize}
 
+\hypertarget{software-engineer-contract}{%
 \subsubsection{Software Engineer
-(contract)}\label{software-engineer-contract}
+(contract)}\label{software-engineer-contract}}
 
 \emph{OVO Energy \textbar{} vCharge} April 2017 -- September 2017,
 London, UK
@@ -326,8 +287,9 @@ Tech Stack:
   ScalaTest, Property-based testing
 \end{itemize}
 
+\hypertarget{scala-consultant-contract}{%
 \subsubsection{Scala Consultant
-(contract)}\label{scala-consultant-contract}
+(contract)}\label{scala-consultant-contract}}
 
 \emph{Civil Service Resourcing (Valtech) \textbar{} Faststream,
 Fasttrack} February 2016 -- April 2017, London, UK
@@ -355,7 +317,9 @@ Tech stack:
   Cucumber, ScalaTest, Property-based testing
 \end{itemize}
 
-\subsubsection{Senior Software Engineer}\label{senior-software-engineer}
+\hypertarget{senior-software-engineer}{%
+\subsubsection{Senior Software
+Engineer}\label{senior-software-engineer}}
 
 \emph{Monitise \textbar{} FinKit platform, Matm} August 2013 -- February
 2016, London, UK
@@ -388,13 +352,15 @@ Tech stack:
   TDD, BDD, Continuous Delivery, Continuous Integration
 \end{itemize}
 
+\hypertarget{full-stack-java-developer}{%
 \subsubsection{Full stack Java
-Developer}\label{full-stack-java-developer}
+Developer}\label{full-stack-java-developer}}
 
 \emph{Sabre Holdings} November 2010 -- August 2013, Krakow, Poland
 
+\hypertarget{full-stack-java-developer-1}{%
 \subsubsection{Full stack Java
-Developer}\label{full-stack-java-developer-1}
+Developer}\label{full-stack-java-developer-1}}
 
 \emph{ComArch} June 2008 -- November 2010, Krakow, Poland
 
