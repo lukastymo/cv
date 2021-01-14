@@ -3,32 +3,46 @@ title: Resume
 layout: post
 ---
 
-I'm a Scala / Data Engineer with over eleven years' experience. I inspire and help teams in being productive. I love mathematics, algorithms and problem-solving. I'm a founder of scalaworkshop.com.
+I am a Scala Engineer with over twelve years' experience. I love algorithms and problem-solving.
 
-I'm goal oriented, proactive and able to work remotely, with outstanding communications skills.
+I am goal oriented, proactive and able to work remotely, with outstanding communications skills.
 
-My business experience: Legal (ISDA, initial margin documentation), Machine Learning (Apache Spark, Scala, Python, Docker), Finance and Banking (Risk Management FRTB, MIFID, Basel), Energy industry (Energy price forecasting, IoT), Public sector (Automatic recruitment system), Aviation.
+My business experience: Legal (ISDA negotiation), Logistics (travelling salesman problem), Finance (FRTB, Risk DSL for quants), Energy sector, Public sector, Aviation.
 
 My after-work activities:
 
 - My homepage and blog: [lukastymo.com](https://lukastymo.com)
-- Scala course: [scalaworkshop.com](https://scalaworkshop.com)
-- [stackoverflow.com/users/574799/smas](https://stackoverflow.com/users/574799/smas) (top 2%)
-- [codeforces.com/profile/smas](https://codeforces.com/profile/smas)
+- Studying remotly MBA, engaging in small side projects
+- Competitive Programming (codeforces), [stackoverflow.com/users/574799/smas](https://stackoverflow.com/users/574799/smas) (top 2%)
 
 Technical experience:
 
 - Scala (Functional Programming), Java (SOLID, OO), JVM
-- Big Data: Apache Spark, HDFS, Apache Hive, ETL, SQL, Docker
-- Machine Learning, Python / Jupyter Notebook
+- Big Data/ML: Apache Spark, HDFS, ETL, SQL, Docker, Python, Jupyter Notebook
 - DevOps & Cloud: AWS, Ansible, Terraform, Grafana, Docker and Kubernetese, ELK
-- Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
-- Agile Development practices: CI/CD, TDD, Pair Programming, Code Review
+- Distributed Systems: Akka, Microservices, Event-driven architecture
+- Agile practices: CI/CD, TDD, Pair Programming, Code Review, teaching
 
 ### Education
 
-- M.S., MBA, University of Illinois Urbana-Champaign, 2019 - present, USA
 - M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow, Poland
+- M.S., MBA, University of Illinois Urbana-Champaign, 2019 - present, USA
+
+### Lead Scala Developer (contract)
+
+_HM Revenue & Customs (Mercator IT) | AEO MRA (Brexit)_<br/>
+October 2020 -- Present, London, UK
+
+* We worked on Authorized Economic Operator data conversion between EU and GB.
+
+Tech stack:
+
+- Functional Scala, Play, Cats, Scalaxb, Microservices
+- REST, SOAP, HMRC Tax Platform, Monitoring tools
+
+### Paternity Leave
+
+January 2020 -- October 2020
 
 ### Senior Scala Developer (contract)
 
@@ -78,14 +92,9 @@ September 2017 -- May 2018, London, UK
 
 Tech stack:
 
-- Scala, Cats, Monix Tasks
-- Apache Spark, Hadoop, Cassandra
+- Scala, Cats, Monix Tasks, Apache Spark, Hadoop, Cassandra
 - AWS (EC2, S3), Cloud Computing, EMR, Yarn
-- Apache Zeppelin, Big Data, Helping BAs with notebooks written in Python
-- CI / CD, Ansible, Git workflow
-- TDD, Code review, Scrum team
-- REST, Swagger
-- Agile: Scrum
+- Apache Zeppelin, CI / CD, Ansible, Git workflow
 
 ### Software Engineer (contract)
 
@@ -98,11 +107,7 @@ April 2017 -- September 2017, London, UK
 
 Tech Stack:
 
-- Scala, Akka, Play Framework, Lagom Framework
-- CQRS / Event Sourcing, Cassandra
-- Python (PoC)
-- Microservices
-- ScalaTest, Property-based testing
+- Scala, Python, Akka, Play Framework, Lagom Framework, CQRS / Event Sourcing, Cassandra
 
 ### Scala Consultant (contract)
 
@@ -113,10 +118,8 @@ February 2016 -- April 2017, London, UK
 
 Tech stack:
 
-- Scala and functional design
-- Play framework, RESTful API, MongoDB
-- Microservices, Kibana, Grafana
-- Cucumber, ScalaTest, Property-based testing
+- Scala, Play framework, RESTful API, MongoDB, Cucumber, ScalaTest, Property-based testing
+- Microservices, Kibana, Grafana, HMRC Tax Platform
 
 ### Senior Software Engineer
 
@@ -127,13 +130,8 @@ August 2013 -- February 2016, London, UK
 
 Tech stack:
 
-- Scala, Akka
-- REST: Spray, Swagger (generator)
-- IBM Bluemix, NoSQL: Cloudant, AMQP protocol
-- Java 6 / 7, Apache Camel
-- Modularization: OSGi, Messaging: JMS
-- REST, SOAP, SOA
-- TDD, BDD, Continuous Delivery, Continuous Integration
+- Scala, Akka, REST: Spray, Swagger (generator), 
+- IBM Cloud stack, Apache Camel, Modularization: OSGi, Messaging: JMS, REST, SOAP, SOA
 
 ### Full stack Java Developer
 

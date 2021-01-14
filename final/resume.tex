@@ -1,63 +1,60 @@
-\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames*,x11names*}{xcolor}
 %
-\documentclass[]{rss}
+\documentclass[
+]{rss}
 \usepackage{lmodern}
-\usepackage{amssymb,amsmath}
+\usepackage{amsmath}
 \usepackage{ifxetex,ifluatex}
-\usepackage{fixltx2e} % provides \textsubscript
 \ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provides euro and other symbols
-\else % if luatex or xelatex
+  \usepackage{textcomp} % provide euro and other symbols
+  \usepackage{amssymb}
+\else % if luatex or xetex
   \usepackage{unicode-math}
-  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
 \fi
-% use upquote if available, for straight quotes in verbatim environments
+% Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
-% use microtype if available
-\IfFileExists{microtype.sty}{%
-\usepackage[]{microtype}
-\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
 }{}
-\IfFileExists{parskip.sty}{%
-\usepackage{parskip}
-}{% else
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{6pt plus 2pt minus 1pt}
-}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
 \usepackage{xcolor}
-\usepackage{hyperref}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \hypersetup{
-            pdftitle={Resume},
-            colorlinks=true,
-            linkcolor=blue,
-            citecolor=Blue,
-            urlcolor=Blue,
-            breaklinks=true}
-\urlstyle{same}  % don't use monospace font for urls
-\setlength{\emergencystretch}{3em}  % prevent overfull lines
+  pdftitle={Resume},
+  colorlinks=true,
+  linkcolor=blue,
+  filecolor=Maroon,
+  citecolor=Blue,
+  urlcolor=Blue,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{0}
-% Redefines (sub)paragraphs to behave more like sections
-\ifx\paragraph\undefined\else
-\let\oldparagraph\paragraph
-\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
-\fi
-\ifx\subparagraph\undefined\else
-\let\oldsubparagraph\subparagraph
-\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
 \fi
 
-% set default figure placement to htbp
-\makeatletter
-\def\fps@figure{htbp}
-\makeatother
-
-
+\author{}
 \date{}
 
 \begin{document}
@@ -66,18 +63,15 @@
 \address{\\[-9pt] lukas@codeily.com | lukastymo.com}
 \begin{resume}
 
-I'm a Scala / Data Engineer with over eleven years' experience. I
-inspire and help teams in being productive. I love mathematics,
-algorithms and problem-solving. I'm a founder of scalaworkshop.com.
+I am a Scala Engineer with over twelve years' experience. I love
+algorithms and problem-solving.
 
-I'm goal oriented, proactive and able to work remotely, with outstanding
-communications skills.
+I am goal oriented, proactive and able to work remotely, with
+outstanding communications skills.
 
-My business experience: Legal (ISDA, initial margin documentation),
-Machine Learning (Apache Spark, Scala, Python, Docker), Finance and
-Banking (Risk Management FRTB, MIFID, Basel), Energy industry (Energy
-price forecasting, IoT), Public sector (Automatic recruitment system),
-Aviation.
+My business experience: Legal (ISDA negotiation), Logistics (travelling
+salesman problem), Finance (FRTB, Risk DSL for quants), Energy sector,
+Public sector, Aviation.
 
 My after-work activities:
 
@@ -86,12 +80,11 @@ My after-work activities:
 \item
   My homepage and blog: \href{https://lukastymo.com}{lukastymo.com}
 \item
-  Scala course: \href{https://scalaworkshop.com}{scalaworkshop.com}
+  Studying remotly MBA, engaging in small side projects
 \item
+  Competitive Programming (codeforces),
   \href{https://stackoverflow.com/users/574799/smas}{stackoverflow.com/users/574799/smas}
   (top 2\%)
-\item
-  \href{https://codeforces.com/profile/smas}{codeforces.com/profile/smas}
 \end{itemize}
 
 Technical experience:
@@ -101,16 +94,15 @@ Technical experience:
 \item
   Scala (Functional Programming), Java (SOLID, OO), JVM
 \item
-  Big Data: Apache Spark, HDFS, Apache Hive, ETL, SQL, Docker
-\item
-  Machine Learning, Python / Jupyter Notebook
+  Big Data/ML: Apache Spark, HDFS, ETL, SQL, Docker, Python, Jupyter
+  Notebook
 \item
   DevOps \& Cloud: AWS, Ansible, Terraform, Grafana, Docker and
   Kubernetese, ELK
 \item
-  Distributed Systems: Akka, Microservices, NoSQL, The Twelve-Factor App
+  Distributed Systems: Akka, Microservices, Event-driven architecture
 \item
-  Agile Development practices: CI/CD, TDD, Pair Programming, Code Review
+  Agile practices: CI/CD, TDD, Pair Programming, Code Review, teaching
 \end{itemize}
 
 \hypertarget{education}{%
@@ -119,12 +111,41 @@ Technical experience:
 \begin{itemize}
 \tightlist
 \item
-  M.S., MBA, University of Illinois Urbana-Champaign, 2019 - present,
-  USA
-\item
   M.S., Computer Science, Jagiellonian University, 2005 - 2010, Krakow,
   Poland
+\item
+  M.S., MBA, University of Illinois Urbana-Champaign, 2019 - present,
+  USA
 \end{itemize}
+
+\hypertarget{lead-scala-developer-contract}{%
+\subsubsection{Lead Scala Developer
+(contract)}\label{lead-scala-developer-contract}}
+
+\emph{HM Revenue \& Customs (Mercator IT) \textbar{} AEO MRA (Brexit)}
+October 2020 -- Present, London, UK
+
+\begin{itemize}
+\tightlist
+\item
+  We worked on Authorized Economic Operator data conversion between EU
+  and GB.
+\end{itemize}
+
+Tech stack:
+
+\begin{itemize}
+\tightlist
+\item
+  Functional Scala, Play, Cats, Scalaxb, Microservices
+\item
+  REST, SOAP, HMRC Tax Platform, Monitoring tools
+\end{itemize}
+
+\hypertarget{paternity-leave}{%
+\subsubsection{Paternity Leave}\label{paternity-leave}}
+
+January 2020 -- October 2020
 
 \hypertarget{senior-scala-developer-contract}{%
 \subsubsection{Senior Scala Developer
@@ -232,22 +253,11 @@ Tech stack:
 \begin{itemize}
 \tightlist
 \item
-  Scala, Cats, Monix Tasks
-\item
-  Apache Spark, Hadoop, Cassandra
+  Scala, Cats, Monix Tasks, Apache Spark, Hadoop, Cassandra
 \item
   AWS (EC2, S3), Cloud Computing, EMR, Yarn
 \item
-  Apache Zeppelin, Big Data, Helping BAs with notebooks written in
-  Python
-\item
-  CI / CD, Ansible, Git workflow
-\item
-  TDD, Code review, Scrum team
-\item
-  REST, Swagger
-\item
-  Agile: Scrum
+  Apache Zeppelin, CI / CD, Ansible, Git workflow
 \end{itemize}
 
 \hypertarget{software-engineer-contract}{%
@@ -276,15 +286,8 @@ Tech Stack:
 \begin{itemize}
 \tightlist
 \item
-  Scala, Akka, Play Framework, Lagom Framework
-\item
-  CQRS / Event Sourcing, Cassandra
-\item
-  Python (PoC)
-\item
-  Microservices
-\item
-  ScalaTest, Property-based testing
+  Scala, Python, Akka, Play Framework, Lagom Framework, CQRS / Event
+  Sourcing, Cassandra
 \end{itemize}
 
 \hypertarget{scala-consultant-contract}{%
@@ -308,13 +311,10 @@ Tech stack:
 \begin{itemize}
 \tightlist
 \item
-  Scala and functional design
+  Scala, Play framework, RESTful API, MongoDB, Cucumber, ScalaTest,
+  Property-based testing
 \item
-  Play framework, RESTful API, MongoDB
-\item
-  Microservices, Kibana, Grafana
-\item
-  Cucumber, ScalaTest, Property-based testing
+  Microservices, Kibana, Grafana, HMRC Tax Platform
 \end{itemize}
 
 \hypertarget{senior-software-engineer}{%
@@ -337,19 +337,10 @@ Tech stack:
 \begin{itemize}
 \tightlist
 \item
-  Scala, Akka
+  Scala, Akka, REST: Spray, Swagger (generator),
 \item
-  REST: Spray, Swagger (generator)
-\item
-  IBM Bluemix, NoSQL: Cloudant, AMQP protocol
-\item
-  Java 6 / 7, Apache Camel
-\item
-  Modularization: OSGi, Messaging: JMS
-\item
+  IBM Cloud stack, Apache Camel, Modularization: OSGi, Messaging: JMS,
   REST, SOAP, SOA
-\item
-  TDD, BDD, Continuous Delivery, Continuous Integration
 \end{itemize}
 
 \hypertarget{full-stack-java-developer}{%
